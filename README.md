@@ -15,8 +15,38 @@ path_provider: ^2.0.7
     
 ```
 
+development environment:
 ```plaintext
+Android Studio Arctic Fox Version 2020.3.1 Patch 3
+Build #AI-203.7717.56.2031.7784292
+Runtime version: 11.0.10+0-b96-7249189 aarch64
+VM: OpenJDK 64-Bit Server VM
+Flutter 2.5.3 channel stable Framework Revision 18116933e7
+Dart 2.14.4
+```
 
+tested on:
+```plaintext
+Android Simulator: 
+  Android 11 (SDK 30) Emulator,
+  Android 12 SV2 (SDK 31) Emulator, 
+  Android 6 (SDK 23) Emulator,
+  Android 5 (SDK 21) Emulator.
+iOS Simulator:  
+  iOS 15 Emulator
+  iOS 11.4 Emulator 
+```
+
+```plaintext
+in AndroidManifest.xml ergänzen:
+
+    <queries>
+        <!-- If your app opens https URLs -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 ```
 
 ```plaintext
